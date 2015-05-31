@@ -1,0 +1,17 @@
+<h1>Listing posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <%= render 'task' %>
+  <div id="incomplete_tasks"></div>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path, id: "new_link", remote: true %>

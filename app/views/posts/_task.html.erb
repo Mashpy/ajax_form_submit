@@ -1,0 +1,8 @@
+    <% @posts.each do |post| %>
+      <tr class="task_list">
+        <td class="task_list"><%= post.title %></td>
+        <td class="task_list"><%= link_to 'Show', post %></td>
+        <td class="task_list"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="task_list"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
